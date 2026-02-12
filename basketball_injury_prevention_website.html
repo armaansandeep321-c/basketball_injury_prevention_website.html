@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basketball Injury Prevention & Recovery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: white;
+      line-height: 1.7;
+    }
+    header {
+      padding: 70px 40px;
+      text-align: left;
+      background: radial-gradient(circle at top, #020617, #020617 40%, #0f172a);
+    }
+    h1 {
+      margin: 0;
+      font-size: 44px;
+    }
+    h2 {
+      color: #f97316;
+      margin-top: 40px;
+    }
+    h3 {
+      margin-top: 30px;
+    }
+    .container {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .card {
+      background: rgba(2, 6, 23, 0.9);
+      padding: 25px;
+      border-radius: 18px;
+      cursor: pointer;
+      transition: transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+    .section {
+      display: none;
+      margin-top: 60px;
+      animation: fadeIn 0.4s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .back {
+      margin-top: 40px;
+      color: #f97316;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .image-box {
+      margin-top: 30px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    }
+    .note {
+      background: rgba(249,115,22,0.1);
+      border-left: 4px solid #f97316;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Basketball Injury Prevention & Recovery</h1>
+  <p>An in-depth interactive guide created by a student-athlete to help basketball players recover safely and prevent future injuries.</p>
+</header>
+
+<div class="container">
+
+  <div id="home">
+    <h2>Choose an Injury Topic</h2>
+    <p>This website breaks down common basketball injuries into simple explanations, clear recovery steps, and practical prevention drills that athletes can actually follow.</p>
+    <div class="menu">
+      <div class="card" onclick="openSection('ankle')">Ankle Sprain</div>
+      <div class="card" onclick="openSection('knee')">Knee Pain</div>
+      <div class="card" onclick="openSection('finger')">Finger Injuries</div>
+      <div class="card" onclick="openSection('hamstring')">Hamstring Strain</div>
+    </div>
+  </div>
+
+  <div id="ankle" class="section">
+    <h2>Ankle Sprain</h2>
+    <p>An ankle sprain occurs when the ligaments that support the ankle are overstretched or torn. In basketball, this commonly happens during landing after a jump, sudden changes in direction, or stepping on another player's foot.</p>
+
+    <h3>Common Symptoms</h3>
+    <ul>
+      <li>Swelling around the ankle joint</li>
+      <li>Pain when walking or putting weight on the foot</li>
+      <li>Bruising or tenderness</li>
+      <li>Feeling of instability</li>
+    </ul>
+
+    <h3>Recovery Process</h3>
+    <p>Recovery depends on the severity of the sprain. Returning to sport too early increases the risk of re-injury.</p>
+    <ul>
+      <li><strong>Days 1–3:</strong> Rest, apply ice, and avoid pressure on the ankle.</li>
+      <li><strong>Days 4–7:</strong> Begin gentle movement, stretching, and balance exercises.</li>
+      <li><strong>Return to Play:</strong> Only when pain-free, full movement is restored, and strength has returned.</li>
+    </ul>
+
+    <h3>R.I.C.E. Protocol</h3>
+    <ul>
+      <li><strong>Rest:</strong> Stop playing and protect the ankle.</li>
+      <li><strong>Ice:</strong> Apply for 15–20 minutes every few hours.</li>
+      <li><strong>Compression:</strong> Use an elastic bandage to control swelling.</li>
+      <li><strong>Elevation:</strong> Raise the ankle above heart level when resting.</li>
+    </ul>
+
+    <h3>Injury Prevention</h3>
+    <ul>
+      <li>Balance training on one leg</li>
+      <li>Ankle strengthening using resistance bands</li>
+      <li>Learning proper landing mechanics</li>
+      <li>Wearing supportive footwear</li>
+    </ul>
+
+    <div class="note">
+      <strong>Personal Reflection:</strong> After experiencing an ankle sprain myself, I realised how often players rush back into games without understanding proper recovery. This section was designed to prevent that mistake.
+    </div>
+
+    <div class="image-box">
+      <p><strong>Player Action Example</strong></p>
+      <!-- Replace with your own photo -->
+      <!-- <img src="me-playing.jpg" alt="Basketball action" /> -->
+    </div>
+
+    <div class="back" onclick="goHome()">← Back to Home</div>
+  </div>
+
+  <div id="knee" class="section">
+    <h2>Knee Pain</h2>
+    <p>Knee pain in basketball is often caused by repetitive jumping, poor landing technique, muscle imbalances, or overuse without adequate recovery.</p>
+
+    <h3>Prevention Focus</h3>
+    <ul>
+      <li>Strengthening quadriceps and hamstrings</li>
+      <li>Improving jump and landing form</li>
+      <li>Proper warm-up routines</li>
+    </ul>
+
+    <div class="back" onclick="goHome()">← Back to Home</div>
+  </div>
+
+  <div id="finger" class="section">
+    <h2>Finger Injuries</h2>
+    <p>Finger injuries usually occur from contact with the ball, rebounds, or collisions with other players.</p>
+
+    <h3>Common Issues</h3>
+    <ul>
+      <li>Jammed fingers</li>
+      <li>Sprains</li>
+      <li>Dislocations</li>
+    </ul>
+
+    <div class="back" onclick="goHome()">← Back to Home</div>
+  </div>
+
+  <div id="hamstring" class="section">
+    <h2>Hamstring Strain</h2>
+    <p>Hamstring strains occur during sprinting, sudden acceleration, or rapid changes in speed.</p>
+
+    <h3>Key Prevention Strategies</h3>
+    <ul>
+      <li>Dynamic warm-ups</li>
+      <li>Strengthening posterior chain muscles</li>
+      <li>Avoiding sudden workload increases</li>
+    </ul>
+
+    <div class="back" onclick="goHome()">← Back to Home</div>
+  </div>
+
+</div>
+
+<script>
+  function openSection(id) {
+    document.getElementById('home').style.display = 'none';
+    document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  function goHome() {
+    document.getElementById('home').style.display = 'block';
+    document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
